@@ -1,27 +1,21 @@
-.DEFAULT_GOAL := default
+define help-text
 
-# default goal
-default: pdf clean
+Environment targets:
+    help         - prin this text
+endef
 
-## Create PDF
-pdf:
-	xelatex cv
-	biber cv
-	xelatex cv
-
-## Cleanup build files
-clean:
-	rm -rf cv.log cv.out cv.aux cv.blg cv.bbl cv.bcf cv.run.xml
-
-## Show this help screen
+.PHONY: help
 help:
-	@printf "Available targets\n\n"
-	@awk '/^[a-zA-Z\-\_0-9]+:/ { \
-		helpMessage = match(lastLine, /^## (.*)/); \
-		if (helpMessage) { \
-			helpCommand = substr($$1, 0, index($$1, ":")-1); \
-			helpMessage = substr(lastLine, RSTART + 3, RLENGTH); \
-			printf "%-30s %s\n", helpCommand, helpMessage; \
-		} \
-	} \
-	{ lastLine = $$0 }' $(MAKEFILE_LIST)
+	$(q)true$(info $(help-text))
+
+.PHONY: setup
+setup:
+	@if [ ! -f cv/$${NAME}-cv.tex ]; then cp cv/template-cv.tex cv/$${NAME}-cv.tex; fi
+
+.PHONY: pdf
+pdf:
+	cd cv && make NAME=${NAME} pdf
+
+.PHONY: clean
+clean:
+	cd cv && make NAME=${NAME} clean

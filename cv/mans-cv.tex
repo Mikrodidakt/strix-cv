@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV for A4 paper format
+% XeLaTeX Template
+% Version 1.1
+%
+% A4 version author:
+% Marvin Frommhold (depressiverobot.com)
+% https://github.com/depressiveRobot/friggeri-cv-a4
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Options
+% 'print': remove colors from this template for printing
+% 'nocolors' to disable colors in section headers
+\documentclass[nocolors]{template/friggeri-cv-a4}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\header{Måns}{Zigher}{Embedded System Developer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+% SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\includegraphics[scale=0.20] {template/Uggla_256.png}
+\section{contact}
+Skiffervägen 48
+SE-224 78 Lund
+Sweden
+~
++46 46 325040
++46 704 225344
+~
+\href{mailto:pontus.zigher@mikrodidakt.se}{pontus@mikrodidakt.se}
+\href{http://www.mikrodidakt.se}{www.mikrodidakt.se}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+% WHAT I CAN DO FOR YOU SECTION
+%----------------------------------------------------------------------------------------
+
+With my experience and with my desire to learn and exceed I believe I could be an asset to you. I grow from working close with other people but are capable to work on my own too. I am not afraid to explore unknown technical areas which I always try to get a big picture of.
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\subsection{summary}
+
+I graduated with a master in 2008. I have mostly worked with GNU/Linux on embedded systems. I have worked on my own and in groups, I have learned to take responsibility, plan and structure my work, I have learned how to take a project from start to finish. I work best when pushed and when people put their confidence in me and my possibility to grow and learn.
+
+\subsection{work}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2019--Now}
+{Jabra}
+{Copenhagen, Denmark}
+{\emph{Keywords: GNU/Linux, Yocto, git, Gerrit, Artifactory, Docker, Jenkins, pyhton and shell scripts.} \\
+\\
+Working with setting up a new Linux system using the yocto project.
+\\
+}
+
+%------------------------------------------------
+
+\entry
+{2017--2019}
+{Bang Olufssen}
+{Copenhagen, Denmark}
+{\emph{Keywords: GNU/Linux, U-boot, Yocto, C/C++, Qt, CMake, git, GitHub, Docker, CI, pyhton and shell scripts.} \\
+\\
+I was part of a team to setup an new Linux platform for there new products. This have involved working with languages like C++, C and Python. I have also been heavily involved in developing the embedded platform using the Yocto project. I worked on everything from DevOps tasks involving Docker, shippable, build environments to tweaking the bootloader.
+\\
+}
+
+%------------------------------------------------
+
+\entry
+{2012-2017}
+{Schneider Electric}
+{Malmö, Sweden}
+{\emph{Keywords: GNU/Linux, C, U-boot, Python, Lauterbach, USB, I2C, RTC, sNOR, eMMC, SPI, Linux Kernel, Linux Kernel DTB/DTS, Make, Yocto Project, git, docker} \\
+\\
+During my time at Schneider Electric Buildings AB I was part of the embedded Linux team. I worked closely with the HW team during bring-up of two new ARM platforms running a GNU/Linux system. I was also given the opportunity to take the responsibility to develop and organize development of a test framework for the production of the two new product's. The framework was developed by using Lauterbachs PRACTICE scripting language and running HW tests written in C using U-boot as the platform. During this project I debugged and/or developed tests for the following I2C, RTC, sNOR, eMMC, SPI, RS485. I also spend a lot of time on the upgrade process which was utilizing USB. As a result I improved the process by developing an USB upgrade mechanisms based on bulk transfers which increased the upgrade speed.
+\\
+}
+
+\end{entrylist}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2011-2012}
+{Sony Mobile Communication}
+{Lund, Sweden}
+{\emph{Keywords: GNU/Linux, C, U-boot, Python, Lauterbach, USB, I2C, RTC, sNOR, eMMC, SPI, Linux Kernel, Linux Kernel DTB/DTS, Make, Yocto Project, git, docker} \\
+\\
+I worked as a consultant at Sony Mobile on the Android Multimedia Middle-ware team where most of the work was to troubleshoot the multimedia stack, everything from the application layer in Java down to platform via JNI, C++, ANSI C and finally to the codecs and their drivers. Part of my focus was on crashes and deadlocks and it was through that that I was given the opportunity to be part of a task force with the goal to create a more stable platform. My part in the team was to analyse crashes and deadlocks regarding the multimedia framework. The task force resulted in that the multimedia framework was moved out from the task force focus because of the stability improvements. During my time at Sony mobile I was also part of a team of two, our objective was to rewrite an existing MPEG4 multimedia container and it's components in C++.
+\\
+}
+
+%------------------------------------------------
+
+\entry
+{2009-2011}
+{Axis Communication}
+{Lund, Sweden}
+{\emph{Keywords: C, Python, bash, GNU/Linux, Make} \\
+\\
+Axis Communication AB is world leading in TCP/IP surveillance cameras at which I worked as software developer. They have their own GNU/Linux system running on their cameras and I was working in the feature team. One of the main component of their platform is the GStreamer library which is a multimedia framework written in C. My main function was as maintainer on several of the components on their GNU/Linux platform. I also worked on the build-system which was made up of different script languages such as perl, python and bash.
+\\
+}
+
+%------------------------------------------------
+
+\entry
+{2008-2009}
+{Mikrodidakt}
+{Lund, Sweden}
+{\emph{Keywords: GNU/Linux, C, Bluetooth, RTOS} \\
+\\
+More often than not you were the developer, manager, tester and customer handler. You did the projects from the ground up and you were responsible to meet the deadlines. I configured and administrated a cluster of nodes with GNU/Linux running a number of services on them. I developed web application, J2ME application and wrote AT-commands to a blue-tooth module over UART on a C8051 processor in C. One of my more interesting assignments was when I worked with a customers ARM9 platform running the real-time operating system RTOS from Green Hill. I configured the memory outline by adding shared memory for the IPC, added some new features and then improved the overall stability of one of applications on the system.
+\\
+}
+
+%------------------------------------------------
+
+\entry
+{2004-2008}
+{Mikrodidakt}
+{Lund, Sweden}
+{\emph{Keywords: C/C++, MySQL, GNU/Linux} \\
+\\
+During my university time I worked on and off at Mikrodidakt AB. During that time I worked with C/C++, MySQL, tested and assembled different products that they manufactured. One of the bigger assignments was to develop a database application in windows in C++. The application were interacting with one of their medical device currently manufactured. When connecting the device to a computer the application was loading the stored data from the device to the MySQL database that I also had to develop. The user could then analyse the data with the application. I went to Boston for a week to set up database and held courses about the application for a number of people. I also did my master thesis in 2007 at Mikrodidakt AB which resulted in a running GNU/Linux system on a ARM9 platform.
+\\
+}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2002--2008}
+{Master {\normalfont of Electrical and Electronics Engineering}}
+{LTH}
+{The Faculty of Engineering at Lund University}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\end{document}

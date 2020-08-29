@@ -1,0 +1,147 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV for A4 paper format
+% XeLaTeX Template
+% Version 1.1
+%
+% A4 version author:
+% Marvin Frommhold (depressiverobot.com)
+% https://github.com/depressiveRobot/friggeri-cv-a4
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Options
+% 'print': remove colors from this template for printing
+% 'nocolors' to disable colors in section headers
+\documentclass[nocolors]{template/friggeri-cv-a4}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\header{john}{smith}{junior business analyst} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+% SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\includegraphics[scale=0.20] {template/Uggla_256.png}
+\section{contact}
+Skiffervägen 48
+SE-224 78 Lund
+Sweden
+~
++46 46 325040
++46 704 225344
+~
+\href{mailto:pontus.zigher@mikrodidakt.se}{pontus@mikrodidakt.se}
+\href{http://www.mikrodidakt.se}{www.mikrodidakt.se}
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+% WHAT I CAN DO FOR YOU SECTION
+%----------------------------------------------------------------------------------------
+
+With my experience and with my desire to learn and exceed I believe I could be an asset to you. I grow from working close with other people but are capable to work on my own too. I am not afraid to explore unknown technical areas which I always try to get a big picture of.
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\subsection{summary}
+
+I graduated with a master in 2008. I have mostly worked with GNU/Linux on embedded systems. I have worked on my own and in groups, I have learned to take responsibility, plan and structure my work, I have learned how to take a project from start to finish. I work best when pushed and when people put their confidence in me and my possibility to grow and learn.
+
+\subsection{work}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2012--Now}
+{KickAssCompany}
+{Lund, Sweden}
+{\emph{Keywords: GNU/Linux, C, Bluetooth, RTOS} \\
+Developed spreadsheets for risk analysis on exotic derivatives on a wide array of commodities (ags, oils, precious and base metals), managed blotter and secondary trades on structured notes, liaised with Middle Office, Sales and Structuring for bookkeeping. \\
+Detailed achievements:
+\begin{itemize}
+\item Learned how to make amazing coffee
+\item Finally determined the reason for \textsc{PC LOAD LETTER}:
+\begin{itemize}
+\item Paper jam
+\item Software issues:
+\begin{itemize}
+\item Word not sending the correct data to printer
+\item Windows trying to print in letter format
+\end{itemize}
+\item Coffee spilled inside printer
+\end{itemize}
+\item Broke the office record for number of kitten pictures in cubicle
+\item Learned how to make more amazing coffee on a new machine
+\end{itemize}}
+
+%------------------------------------------------
+
+\entry
+{2010--2011}
+{KickAssCompany2}
+{Malmö, Sweden}
+{\emph{Keywords: C, Python, bash, GNU/Linux, Make} \\
+TCP/IP surveillance cameras at which I worked as software developer. They have their own GNU/Linux system running on their cameras and I was working in the feature team. One of the main component of their platform is the GStreamer library which is a multimedia framework written in C. My main function was as maintainer on several of the components on their GNU/Linux platform. I also worked on the build-system which was made up of different script languages such as perl, python and bash.}
+
+%------------------------------------------------
+
+\entry
+{2008-2009}
+{Buy More}
+{Burbank, California}
+{\emph{Computer Repair Specialist} \\
+Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2011--2012}
+{Masters {\normalfont of Commerce}}
+{The University of California, Berkeley}
+{\emph{Money Is The Root Of All Evil -- Or Is It?} \\ This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%------------------------------------------------
+
+\entry
+{2007--2008}
+{Bachelor {\normalfont of Business Studies}}
+{The University of California, Berkeley}
+{Specialization in Commerce}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+\end{document}

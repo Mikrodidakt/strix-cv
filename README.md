@@ -1,13 +1,12 @@
 # About
 
-Fork of the ShareLateX version of the [Friggeri CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv) from Adrien Friggeri changed to render in A4 paper format. There is also a new option `nocolors` to disable use of colors in section headers.
-
-![](samples/cv.png?raw=true)
+Fork of the ShareLateX version of the [Friggeri CV](https://www.sharelatex.com/templates/cv-or-resume/fancy-cv) from Adrien Friggeri changed to render in A4 paper format.
 
 ## Usage
 
-Run `make pdf` to create the PDF (`cv.pdf`).
-See `make help` for an overview of available targets.
+Run `make setup NAME=<name>` to copy the template text file (`<name>-cv.tex`).
+Run `make pdf NAME=<name>` to create the PDF file (`<name>-cv.pdf`).
+Run `make clean NAME=<name>` to clean build file.
 
 This template needs the following dependencies installed:
 
@@ -16,10 +15,9 @@ This template needs the following dependencies installed:
 * biblatex/biber (publications)
 * textpos (aside)
 
-## Options
-
-* `print`: renders in black and white, and reverts the header to dark on light
-* `nocolors`: no colors in section headers (but still use dark header)
+<pre>
+sudo apt-get install xelatex latex texlive-xetex biber xetex texlive-xetex texlive-latex-extra
+</pre>
 
 ![](samples/cv_nocolors.png?raw=true)
 
